@@ -1,0 +1,336 @@
+/* Reset default styles and apply global font */
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page background */
+body{
+  background: #ffffff;
+  padding: 18px;
+}
+
+/* Main page container */
+.page{
+  width: min(720px, 100%);
+  margin: 0 auto;
+  border: 2px solid #222;
+  padding: 12px;
+  background: #eaf2fb;
+}
+/* Top title bar */
+.title-bar{
+  background: #3f74a8;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+/* Inner canvas area */
+.canvas{
+  background: #f7fbff;
+  border: 2px solid #c6d7ea;
+  padding: 12px;
+}
+
+/* Section block container */
+.block{
+  position: relative;
+  margin: 14px 0;
+  padding-left: 92px; /* مساحة الليبل على الشمال + مسافة */
+}
+
+/* Left section label */
+.label{
+  position: absolute;
+  left: 0;
+  transform: translateX(-2px);
+  top: 12px;
+  background: #3f74a8;
+  color: white;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+/* Common panel style */
+.panel{
+  background: #eef4fb;
+  border: 2px solid #c6d7ea;
+  padding: 14px;
+  overflow: hidden; /* يمنع أي حاجة تطلع برة الفريم */
+}
+
+/* Header */
+.header-panel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.name h1{
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.name p{
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+/* Navigation buttons */
+.nav{
+  display: flex;
+  gap: 8px;
+}
+
+.nav a{
+  text-decoration: none;
+  background: #f7fbff;
+  border: 2px solid #c6d7ea;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: #333;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.nav a:hover{
+  background: #3f74a8;
+  color: #fff;
+}
+
+/* About */
+.about-panel{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+/* Profile image container */
+.photo{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid #c6d7ea;
+  background: #f7fbff;
+  overflow: hidden;
+  flex: 0 0 110px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+/* Profile image */
+.photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Fallback initials */
+.photo .fallback{
+  display: none;
+  font-weight: 600;
+  color: #3f74a8;
+}
+
+.photo.noimg .fallback{
+  display: block;
+}
+/* About text box */
+.desc{
+  flex: 1;
+  min-height: 70px;
+  background: #f7fbff;
+  border: 2px solid #c6d7ea;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #555;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Skills */
+.skills-panel{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Single skill box */
+.skill{
+  background: #f7fbff;
+  border: 2px solid #c6d7ea;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Details under skills */
+.details-panel{
+  margin-top: 10px;
+  background: #f7fbff;
+}
+
+.cols{
+  display: flex;
+  gap: 14px;
+}
+
+.details-panel h2{
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.details-panel ul{
+  padding-left: 16px;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.details-panel li{
+  margin: 3px 0;
+}
+
+/* Contact */
+.contact-info{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 10px;
+}
+/* Contact form rows */
+.contact-form .row{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;  /* يمنع الإيميل والماسدج يطلعوا برة */
+  width: 100%;
+}
+/* Contact inputs */
+.contact-form input{
+  flex: 0 0 calc((100% - 20px) / 3); /* 3 inputs في صف واحد */
+  min-width: 0;
+  padding: 8px;
+  border: 2px solid #c6d7ea;
+  background: #f7fbff;
+  outline: none;
+  font-size: 12px;
+}
+
+/* Bottom row of contact form */
+.contact-form .bottom{
+  margin-top: 10px;
+  align-items: flex-end;
+}
+
+/* Message textarea */
+.contact-form textarea{
+  flex: 1 1 220px;
+  min-width: 0;
+  min-height: 90px;
+  padding: 8px;
+  border: 2px solid #c6d7ea;
+  background: #f7fbff;
+  outline: none;
+  resize: none;
+  font-size: 12px;
+}
+
+/* Send button */
+.contact-form button{
+  width: 90px;
+  height: 36px;
+  border: none;
+  background: #3f74a8;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact-form button:hover{
+  filter: brightness(0.9);
+}
+
+/* Footer */
+.footer-big{
+  min-height: 90px;
+  background: #eef4fb;
+  border: 2px solid #c6d7ea;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 14px;
+}
+
+.footer-big h2{
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.footer-big ul{
+  padding-left: 16px;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.footer-big li{
+  margin: 3px 0;
+}
+
+.edu, .langs{
+  flex: 1;
+  background: #f7fbff;
+  border: 2px solid #c6d7ea;
+  padding: 10px;
+}
+
+.footer-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #666;
+  font-size: 12px;
+}
+
+/* Social icons */
+.social{
+  display: flex;
+  gap: 8px;
+}
+
+.social a{
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  background: #3f74a8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 740px){
+  .block{ padding-left: 0; }
+  .label{ position: static; display: inline-block; margin-bottom: 8px; }
+  .header-panel{ flex-direction: column; align-items: flex-start; }
+  .cols{ flex-direction: column; }
+  .contact-form input{ flex: 1 1 160px; } /* على الموبايل ينزلوا تحت طبيعي */
+  .contact-form button{ width: 100%; }
+  .footer-big{ flex-direction: column; }
+}ضيفلي هنا كومينتات

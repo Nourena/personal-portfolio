@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page encoding -->
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Page title -->
+  <title>Nouran Gaber | Portfolio</title>
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Main page wrapper -->
+  <main class="page">
+    <!-- Top title bar -->
+    <div class="title-bar">Personal Portfolio Page Wireframe</div>
+    <!-- Main content area -->
+    <div class="canvas">
+
+
+      <section class="block" id="top">
+       <!-- Header Section -->
+        <div class="label">Header</div>
+
+        <div class="panel header-panel">
+         <!-- Name and job title -->
+          <div class="name">
+            <h1>Nouran Mohamed Gaber</h1>
+            <p>Web Developer</p>
+          </div>
+          <!-- Navigation links -->
+          <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="block" id="about">
+        <div class="label">About Me</div>
+
+        <div class="panel about-panel">
+          <div class="photo" aria-label="Profile photo">
+            <!-- Profile Image -->
+            <img src="images/profile.jpg" alt="Nouran's Photo" onerror="this.style.display='none'; this.parentElement.classList.add('noimg');">
+            <div class="fallback">NG</div>
+          </div>
+          <!-- About description -->
+          <div class="desc">
+            <p>
+              GIS Specialist with a Diploma in Geospatial Information Systems (ITI) and 7+ years of experience
+              across government, planning, and private sectors. Experienced in data management, analysis, and
+              visualization, with projects in Saudi Arabia (Mecca, Riyadh) and Egypt. Contributed to basemap updates,
+              land planning, data quality control, and GIS system development.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="block" id="skills">
+        <div class="label">Skills</div>
+        <!-- Skills boxes -->
+        <div class="panel skills-panel">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">Spatial Analysis</div>
+          <div class="skill">Python / ArcPy</div>
+        </div>
+        <!-- Detailed skills lists -->
+        <div class="panel details-panel">
+          <div class="cols">
+            <div>
+              <h2>Technical Skills</h2>
+              <ul>
+                <li>Map production & high-resolution print maps</li>
+                <li>Digital image processing & mosaic/edge matching</li>
+                <li>Geoprocessing scripts using Python (ArcPy)</li>
+                <li>Databases: SQL</li>
+                <li>Software: ArcGIS 10.8, ArcSDE, ArcGIS Pro, ERDAS, AutoCAD, QGIS, ArcGIS Online</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2>Professional Skills</h2>
+              <ul>
+                <li>Workload management & meeting deadlines</li>
+                <li>Problem-solving & troubleshooting</li>
+                <li>Strong analytical skills</li>
+                <li>Work planning & prioritization</li>
+                <li>Documentation, reporting, teamwork</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="block" id="contact">
+        <div class="label">Contact Me</div>
+
+        <div class="panel contact-panel">
+          <div class="contact-info">
+            <div><strong>Email:</strong> nourangaber20016@gmail.com</div>
+            <div><strong>Phone:</strong> +201210715177</div>
+            <div><strong>Location:</strong> Cairo, Egypt</div>
+          </div>
+
+          <form class="contact-form">
+            <div class="row">
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+              <input type="text" placeholder="Subject">
+            </div>
+
+            <div class="row bottom">
+              <textarea placeholder="Message..."></textarea>
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section class="block">
+        <div class="label">Footer</div>
+
+        <div class="panel footer-panel">
+          <div class="footer-big">
+
+          </div>
+
+          <div class="footer-bottom">
+            <p>© 2025 Nouran Mohamed Gaber</p>
+
+            <div class="social">
+              <!-- Social media links -->
+              <a href="https://www.linkedin.com/in/nouran-gaber-34b4082a4/" aria-label="LinkedIn">in</a>
+              <a href="https://github.com/Nourena" aria-label="GitHub">⌂</a>
+              <a href="mailto:nourangaber20016@gmail.com" aria-label="Email">@</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>
